@@ -90,7 +90,7 @@ class dng_urational;
 class dng_vector;
 class dng_vector_3;
 class dng_xmp;
-class dng_xmp_sdk;
+//class dng_xmp_sdk;
 class dng_xy_coord;
 
 /*****************************************************************************/

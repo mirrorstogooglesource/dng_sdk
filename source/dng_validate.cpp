@@ -32,7 +32,7 @@
 #include "dng_tag_types.h"
 #include "dng_tag_values.h"
 #include "dng_xmp.h"
-#include "dng_xmp_sdk.h"
+//#include "dng_xmp_sdk.h"
 
 /*****************************************************************************/
 
@@ -839,7 +839,7 @@ int main (int argc, char *argv [])
 			return 1;
 			}
 			
-		dng_xmp_sdk::InitializeSDK ();
+		//dng_xmp_sdk::InitializeSDK ();
 			
 		int result = 0;
 		
@@ -855,7 +855,7 @@ int main (int argc, char *argv [])
 			
 			}
 		
-		dng_xmp_sdk::TerminateSDK ();
+		//dng_xmp_sdk::TerminateSDK ();
 			
 		return result;
 		

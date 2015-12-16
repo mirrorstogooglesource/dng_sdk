@@ -25,7 +25,30 @@
 #include "dng_string.h"
 #include "dng_string_list.h"
 #include "dng_utils.h"
-#include "dng_xmp_sdk.h"
+//#include "dng_xmp_sdk.h"
+
+const char *XMP_NS_TIFF       = "http://ns.adobe.com/tiff/1.0/";
+const char *XMP_NS_EXIF       = "http://ns.adobe.com/exif/1.0/";
+const char *XMP_NS_PHOTOSHOP  = "http://ns.adobe.com/photoshop/1.0/";
+const char *XMP_NS_XAP        = "http://ns.adobe.com/xap/1.0/";
+const char *XMP_NS_XAP_RIGHTS = "http://ns.adobe.com/xap/1.0/rights/";
+const char *XMP_NS_DC         = "http://purl.org/dc/elements/1.1/";
+const char *XMP_NS_XMP_NOTE   = "http://ns.adobe.com/xmp/note/";
+const char *XMP_NS_MM         = "http://ns.adobe.com/xap/1.0/mm/";
+
+const char *XMP_NS_CRS        = "http://ns.adobe.com/camera-raw-settings/1.0/";
+const char *XMP_NS_CRSS       = "http://ns.adobe.com/camera-raw-saved-settings/1.0/";
+const char *XMP_NS_AUX        = "http://ns.adobe.com/exif/1.0/aux/";
+
+const char *XMP_NS_LCP        = "http://ns.adobe.com/photoshop/1.0/camera-profile";
+
+const char *XMP_NS_IPTC       = "http://iptc.org/std/Iptc4xmpCore/1.0/xmlns/";
+const char *XMP_NS_IPTC_EXT   = "http://iptc.org/std/Iptc4xmpExt/2008-02-29/";
+
+const char *XMP_NS_CRX        = "http://ns.adobe.com/lightroom-settings-experimental/1.0/";
+
+const char *XMP_NS_DNG        = "http://ns.adobe.com/dng/1.0/";
+
 
 /*****************************************************************************/
 
@@ -37,7 +60,7 @@ dng_xmp::dng_xmp (dng_memory_allocator &allocator)
 	
 	{
 	
-	fSDK = new dng_xmp_sdk ();
+	fSDK = NULL; //new dng_xmp_sdk ();
 	
 	if (!fSDK)
 		{
@@ -56,7 +79,7 @@ dng_xmp::dng_xmp (const dng_xmp &xmp)
 	
 	{
 	
-	fSDK = new dng_xmp_sdk (*xmp.fSDK);
+	fSDK = NULL; //new dng_xmp_sdk (*xmp.fSDK);
 	
 	if (!fSDK)
 		{
@@ -548,9 +571,9 @@ void dng_xmp::Parse (dng_host &host,
 				     uint32 count)
 	{
 	
-	fSDK->Parse (host,
+	/*fSDK->Parse (host,
 				 (const char *) buffer,
-				 count);
+				 count);*/
 	
 	}
 	
@@ -563,12 +586,12 @@ dng_memory_block * dng_xmp::Serialize (bool asPacket,
 									   bool compact) const
 	{
 	
-	return fSDK->Serialize (fAllocator,
+	return NULL;/*fSDK->Serialize (fAllocator,
 							asPacket,
 							targetBytes,
 							padBytes,
 							forJPEG,
-							compact);
+							compact);*/
 	
 	}
 	
@@ -579,10 +602,10 @@ void dng_xmp::PackageForJPEG (AutoPtr<dng_memory_block> &stdBlock,
 							  dng_string &extDigest) const
 	{
 	
-	fSDK->PackageForJPEG (fAllocator,
+	/*fSDK->PackageForJPEG (fAllocator,
 						  stdBlock,
 						  extBlock,
-						  extDigest);
+						  extDigest);*/
 	
 	}
 	
@@ -591,7 +614,7 @@ void dng_xmp::PackageForJPEG (AutoPtr<dng_memory_block> &stdBlock,
 void dng_xmp::MergeFromJPEG (const dng_xmp &xmp)
 	{
 	
-	fSDK->MergeFromJPEG (xmp.fSDK);
+	//fSDK->MergeFromJPEG (xmp.fSDK);
 	
 	}
 
@@ -600,7 +623,7 @@ void dng_xmp::MergeFromJPEG (const dng_xmp &xmp)
 bool dng_xmp::HasMeta () const
 	{
 	
-	return fSDK->HasMeta ();
+	return false;//fSDK->HasMeta ();
 	
 	}
 
@@ -609,7 +632,7 @@ bool dng_xmp::HasMeta () const
 void * dng_xmp::GetPrivateMeta ()
 	{
 	
-	return fSDK->GetPrivateMeta ();
+	return NULL;//fSDK->GetPrivateMeta ();
 	
 	}
 
@@ -619,7 +642,7 @@ bool dng_xmp::Exists (const char *ns,
 					  const char *path) const
 	{
  
-	return fSDK->Exists (ns, path);
+	return false;//fSDK->Exists (ns, path);
  
 	}
 
@@ -628,7 +651,7 @@ bool dng_xmp::Exists (const char *ns,
 bool dng_xmp::HasNameSpace (const char *ns) const
 	{
  
-	return fSDK->HasNameSpace (ns);
+	return false;//fSDK->HasNameSpace (ns);
  
 	}
 
@@ -640,7 +663,7 @@ bool dng_xmp::IteratePaths (IteratePathsCallback *callback,
 							const char *path)
 	{
 	
-	return fSDK->IteratePaths (callback, callbackData, ns, path);
+	return false;//fSDK->IteratePaths (callback, callbackData, ns, path);
 	
 	}
 						   
@@ -650,7 +673,7 @@ void dng_xmp::Remove (const char *ns,
 				      const char *path)
 	{
 	
-	fSDK->Remove (ns, path);
+	//fSDK->Remove (ns, path);
 	
 	}
 	
@@ -659,7 +682,7 @@ void dng_xmp::Remove (const char *ns,
 void dng_xmp::RemoveProperties (const char *ns)
 	{
 	
-	fSDK->RemoveProperties (ns);
+	//fSDK->RemoveProperties (ns);
 	
 	}
 
@@ -674,13 +697,13 @@ void dng_xmp::RemoveEmptyStringOrArray (const char *ns,
 		return;
 		}
 	
-	if (fSDK->IsEmptyString (ns, path) ||
+	/*if (fSDK->IsEmptyString (ns, path) ||
 		fSDK->IsEmptyArray  (ns, path))
 		{
 		
 		Remove (ns, path);
 		
-		}
+		}*/
 	
 	}
 
@@ -718,7 +741,7 @@ void dng_xmp::Set (const char *ns,
 				   const char *text)
 	{
 	
-	fSDK->Set (ns, path, text);
+	//fSDK->Set (ns, path, text);
 	
 	}
 	
@@ -729,7 +752,7 @@ bool dng_xmp::GetString (const char *ns,
 						 dng_string &s) const
 	{
 	
-	return fSDK->GetString (ns, path, s);
+	return false;//fSDK->GetString (ns, path, s);
 	
 	}
 		
@@ -740,7 +763,7 @@ void dng_xmp::SetString (const char *ns,
 						 const dng_string &s)
 	{
 	
-	fSDK->SetString (ns, path, s);
+	//fSDK->SetString (ns, path, s);
 	
 	}
 		
@@ -848,7 +871,7 @@ bool dng_xmp::GetStringList (const char *ns,
 						 	 dng_string_list &list) const
 	{
 	
-	return fSDK->GetStringList (ns, path, list);
+	return false;//fSDK->GetStringList (ns, path, list);
 	
 	}
 		
@@ -860,7 +883,7 @@ void dng_xmp::SetStringList (const char *ns,
 						     bool isBag)
 	{
 	
-	fSDK->SetStringList (ns, path, list, isBag);
+	//fSDK->SetStringList (ns, path, list, isBag);
 	
 	}
 		
@@ -954,7 +977,7 @@ void dng_xmp::SetStructField (const char *ns,
 	
 	ss.StripLowASCII ();
 	
-	fSDK->SetStructField (ns, path, fieldNS, fieldName, ss.Get ());
+	//fSDK->SetStructField (ns, path, fieldNS, fieldName, ss.Get ());
 
 	}
 
@@ -967,7 +990,7 @@ void dng_xmp::SetStructField (const char *ns,
 							  const char *s)
 	{
 
-	fSDK->SetStructField (ns, path, fieldNS, fieldName, s);
+	//fSDK->SetStructField (ns, path, fieldNS, fieldName, s);
 
 	}
 
@@ -979,7 +1002,7 @@ void dng_xmp::DeleteStructField (const char *ns,
 								 const char *fieldName)
 	{
 	
-	fSDK->DeleteStructField (ns, path, fieldNS, fieldName);
+	//fSDK->DeleteStructField (ns, path, fieldNS, fieldName);
 	
 	}
 								
@@ -992,7 +1015,7 @@ bool dng_xmp::GetStructField (const char *ns,
 							  dng_string &s) const
 	{
 		
-	return fSDK->GetStructField (ns, path, fieldNS, fieldName, s);
+	return false;//fSDK->GetStructField (ns, path, fieldNS, fieldName, s);
 
 	}
 
@@ -1003,7 +1026,7 @@ void dng_xmp::SetAltLangDefault (const char *ns,
 								 const dng_string &s)
 	{
 		
-	fSDK->SetAltLangDefault (ns, path, s);
+	//fSDK->SetAltLangDefault (ns, path, s);
 
 	}
 
@@ -1014,7 +1037,7 @@ bool dng_xmp::GetAltLangDefault (const char *ns,
 								 dng_string &s) const
 	{
 			
-	return fSDK->GetAltLangDefault (ns, path, s);
+	return false;//fSDK->GetAltLangDefault (ns, path, s);
 
 	}
 
@@ -2187,6 +2210,8 @@ void dng_xmp::RebuildIPTC (dng_metadata &metadata,
 	
 	// If there is no XMP, then there is no IPTC.
 	
+    return;
+    /*
 	if (!fSDK->HasMeta ())
 		{
 		return;
@@ -2210,6 +2235,7 @@ void dng_xmp::RebuildIPTC (dng_metadata &metadata,
 		
 		}
 
+    */
 	}
 		
 /*****************************************************************************/
@@ -2219,6 +2245,7 @@ void dng_xmp::SyncFlash (uint32 &flashState,
 						 uint32 options)
 	{
 	
+    /*
 	bool isDefault = (flashState == 0xFFFFFFFF);
 	
 	if ((options & ignoreXMP) || !isDefault)
@@ -2385,6 +2412,7 @@ void dng_xmp::SyncFlash (uint32 &flashState,
 		
 		}
 		
+        */
 	}
 
 /*****************************************************************************/
@@ -2394,6 +2422,7 @@ void dng_xmp::SyncExif (dng_exif &exif,
 						bool doingUpdateFromXMP,
 						bool removeFromXMP)
 	{
+/*
 	
 	DNG_ASSERT (!doingUpdateFromXMP || originalExif,
 				"Must have original EXIF if doingUpdateFromXMP");
@@ -3886,6 +3915,7 @@ void dng_xmp::SyncExif (dng_exif &exif,
 	Remove (XMP_NS_EXIF, "NativeDigest");
 	Remove (XMP_NS_TIFF, "NativeDigest");
 	
+*/
 	}
 
 /*****************************************************************************/
@@ -3907,7 +3937,7 @@ void dng_xmp::ValidateStringList (const char *ns,
 							      const char *path)
 	{
 	
-	fSDK->ValidateStringList (ns, path);
+	//fSDK->ValidateStringList (ns, path);
 
 	}
 							   
@@ -4173,7 +4203,7 @@ dng_orientation dng_xmp::GetOrientation () const
 void dng_xmp::ClearOrientation ()
 	{
 	
-	fSDK->Remove (XMP_NS_TIFF, "Orientation");
+	//fSDK->Remove (XMP_NS_TIFF, "Orientation");
 	
 	}
 				  
@@ -4330,7 +4360,7 @@ void dng_xmp::ComposeArrayItemPath (const char *ns,
 									dng_string &s) const
 	{
 	
-	fSDK->ComposeArrayItemPath (ns, arrayName, itemNumber, s);
+	//fSDK->ComposeArrayItemPath (ns, arrayName, itemNumber, s);
 
 	}
 		
@@ -4343,7 +4373,7 @@ void dng_xmp::ComposeStructFieldPath (const char *ns,
 									  dng_string &s) const
 	{
 	
-	fSDK->ComposeStructFieldPath (ns, structName, fieldNS, fieldName, s);
+	//fSDK->ComposeStructFieldPath (ns, structName, fieldNS, fieldName, s);
 
 	}
 
@@ -4353,7 +4383,7 @@ int32 dng_xmp::CountArrayItems (const char *ns,
 							    const char *path) const
 	{
 	
-	return fSDK->CountArrayItems (ns, path);
+	return 0;//fSDK->CountArrayItems (ns, path);
 
 	}
 
@@ -4366,11 +4396,11 @@ void dng_xmp::AppendArrayItem (const char *ns,
 							   bool propIsStruct)
 	{
 
-	fSDK->AppendArrayItem (ns,
+	/*fSDK->AppendArrayItem (ns,
 						   arrayName,
 						   itemValue,
 						   isBag,
-						   propIsStruct);
+						   propIsStruct);*/
 	}
 
 /*****************************************************************************/

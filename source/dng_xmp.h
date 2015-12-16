@@ -20,9 +20,38 @@
 
 #include "dng_classes.h"
 #include "dng_types.h"
-#include "dng_xmp_sdk.h"
+#include "dng_auto_ptr.h"
+//#include "dng_xmp_sdk.h"
 
 /*****************************************************************************/
+
+typedef bool (IteratePathsCallback) (const char *ns,
+                                     const char *path,
+                                     void *callbackData);
+
+
+extern const char *XMP_NS_TIFF;
+extern const char *XMP_NS_EXIF;
+extern const char *XMP_NS_PHOTOSHOP;
+extern const char *XMP_NS_XAP;
+extern const char *XMP_NS_XAP_RIGHTS;
+extern const char *XMP_NS_DC;
+extern const char *XMP_NS_XMP_NOTE;
+extern const char *XMP_NS_MM;
+
+extern const char *XMP_NS_CRS;
+extern const char *XMP_NS_CRSS;
+
+extern const char *XMP_NS_LCP;
+
+extern const char *XMP_NS_AUX;
+
+extern const char *XMP_NS_IPTC;
+extern const char *XMP_NS_IPTC_EXT;
+
+extern const char *XMP_NS_CRX;
+
+extern const char *XMP_NS_DNG;
 
 class dng_xmp
 	{
@@ -41,7 +70,8 @@ class dng_xmp
 	
 		dng_memory_allocator &fAllocator;
 	
-		dng_xmp_sdk *fSDK;
+		void *fSDK; //dng_xmp_sdk *fSDK;
+		
 	
 	public:
 	

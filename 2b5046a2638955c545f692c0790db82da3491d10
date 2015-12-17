@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "e5aefef8_b258403b",
+        "filename": "source/dng_safe_arithmetic.h",
+        "patchSetId": 2
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 1088353
+      },
+      "writtenOn": "2015-12-17T16:54:17Z",
+      "side": 1,
+      "message": "Sam, could take a look at this comment?",
+      "revId": "2b5046a2638955c545f692c0790db82da3491d10",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    }
+  ]
+}

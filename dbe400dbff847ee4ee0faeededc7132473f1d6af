@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "6a81fbc7_9607ac30",
+        "filename": "source/dng_negative.cpp",
+        "patchSetId": 1
+      },
+      "lineNbr": 725,
+      "author": {
+        "id": 1090758
+      },
+      "writtenOn": "2015-12-18T14:18:34Z",
+      "side": 1,
+      "message": "Indentation should match that of the #if",
+      "range": {
+        "startLine": 725,
+        "startChar": 3,
+        "endLine": 725,
+        "endChar": 8
+      },
+      "revId": "dbe400dbff847ee4ee0faeededc7132473f1d6af",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    }
+  ]
+}

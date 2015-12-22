@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "aaaf738e_b8e379c0",
+        "filename": "Android.mk",
+        "patchSetId": 5
+      },
+      "lineNbr": 75,
+      "author": {
+        "id": 1090538
+      },
+      "writtenOn": "2015-12-22T15:52:35Z",
+      "side": 1,
+      "message": "libdng_sdk",
+      "range": {
+        "startLine": 75,
+        "startChar": 16,
+        "endLine": 75,
+        "endChar": 23
+      },
+      "revId": "7347217ec220e00dded4cb24d8557577e28f82ee",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "4a68b702_95d9444a",
+        "filename": "Android.mk",
+        "patchSetId": 2
+      },
+      "lineNbr": 79,
+      "author": {
+        "id": 1010684
+      },
+      "writtenOn": "2015-12-22T14:54:32Z",
+      "side": 1,
+      "message": "Can you add:\n\nLOCAL_SANITIZE :\u003d unsigned-integer-overflow signed-integer-overflow\n\nThis will enable clang\u0027s signed and unsigned integer overflow protection",
+      "range": {
+        "startLine": 79,
+        "startChar": 0,
+        "endLine": 79,
+        "endChar": 12
+      },
+      "revId": "0635530889993a01e5b417c8524d7fead26c2160",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    }
+  ]
+}

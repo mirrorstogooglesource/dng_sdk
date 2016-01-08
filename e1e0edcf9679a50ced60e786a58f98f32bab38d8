@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "eae08b3e_45dbfc71",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 1090758
+      },
+      "writtenOn": "2016-01-08T10:54:28Z",
+      "side": 1,
+      "message": "- Maybe clarify: _unsigned_ integer overflows\n\n- Also, you\u0027re not avoiding them in all cases -- in some cases, they\u0027re desired, and you\u0027re switching off the flag that detects them.\n\nMaybe:\n\nAvoid ASAN unsigned integer overflow errors. In some cases, the code intends overflow to occur and relies on the defined behavior for unsigned integer wraparound; detection has been switched off in these cases. In other cases, the overflow was undesired; these cases have been fixed to avoid the overflow.",
+      "range": {
+        "startLine": 7,
+        "startChar": 18,
+        "endLine": 7,
+        "endChar": 19
+      },
+      "revId": "e1e0edcf9679a50ced60e786a58f98f32bab38d8",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    }
+  ]
+}

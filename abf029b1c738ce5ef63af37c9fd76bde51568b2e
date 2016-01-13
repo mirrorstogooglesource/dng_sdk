@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "67af7662_e932b197",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 4
+      },
+      "lineNbr": 8,
+      "author": {
+        "id": 1090538
+      },
+      "writtenOn": "2016-01-13T11:10:42Z",
+      "side": 1,
+      "message": "Remove this",
+      "range": {
+        "startLine": 7,
+        "startChar": 32,
+        "endLine": 8,
+        "endChar": 49
+      },
+      "revId": "abf029b1c738ce5ef63af37c9fd76bde51568b2e",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    }
+  ]
+}

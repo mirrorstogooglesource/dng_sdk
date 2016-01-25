@@ -467,6 +467,9 @@ inline real64 Lerp_real64 (real64 a, real64 b, real64 t)
 
 /*****************************************************************************/
 
+#if defined(__clang__) && !defined(__APPLE__)
+__attribute__((no_sanitize("float-cast-overflow")))
+#endif
 inline int32 Round_int32 (real32 x)
 	{
 	

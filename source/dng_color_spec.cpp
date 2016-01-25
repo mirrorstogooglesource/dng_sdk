@@ -409,6 +409,10 @@ void dng_color_spec::SetWhiteXY (const dng_xy_coord &white)
 	// Find the camera white values.
 	
 	fCameraWhite = colorMatrix * XYtoXYZ (fWhiteXY);
+	if (fCameraWhite == 0)
+		{
+		 ThrowBadFormat ();
+		}
 	
 	real64 whiteScale = 1.0 / MaxEntry (fCameraWhite);
 	

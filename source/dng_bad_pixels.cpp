@@ -589,6 +589,9 @@ dng_opcode_FixBadPixelsList::dng_opcode_FixBadPixelsList
 	
 /*****************************************************************************/
 
+#if defined(__clang__)
+__attribute__((no_sanitize("unsigned-integer-overflow")))
+#endif
 dng_opcode_FixBadPixelsList::dng_opcode_FixBadPixelsList (dng_stream &stream)
 
 	:	dng_filter_opcode (dngOpcode_FixBadPixelsList,

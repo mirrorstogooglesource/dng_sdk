@@ -78,6 +78,9 @@ class dng_opcode_FixBadPixelsConstant: public dng_filter_opcode
 								  
 	protected:
 	
+#if defined(__clang__)
+__attribute__((no_sanitize("unsigned-integer-overflow")))
+#endif
 		bool IsGreen (int32 row, int32 col) const
 			{
 			return (((uint32) row + (uint32) col + fBayerPhase + (fBayerPhase >> 1)) & 1) == 0;

@@ -103,6 +103,9 @@ void dng_date_time::Clear ()
 			
 /*****************************************************************************/
 
+#if defined(__clang__)
+__attribute__((no_sanitize("unsigned-integer-overflow")))
+#endif
 static uint32 DateTimeParseU32 (const char *&s)
 	{
 	

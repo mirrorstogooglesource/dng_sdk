@@ -256,6 +256,9 @@ dng_ifd::~dng_ifd ()
 	
 /*****************************************************************************/
 
+#if defined(__clang__)
+__attribute__((no_sanitize("unsigned-integer-overflow")))
+#endif
 // Parses tags that should only appear in IFDs that contain images.
 
 bool dng_ifd::ParseTag (dng_stream &stream,
@@ -2717,6 +2720,9 @@ bool dng_ifd::IsValidCFA (dng_shared &shared,
 	
 /*****************************************************************************/
 
+#if defined(__clang__)
+__attribute__((no_sanitize("unsigned-integer-overflow")))
+#endif
 bool dng_ifd::IsValidDNG (dng_shared &shared,
 					      uint32 parentCode)
 	{
@@ -4051,6 +4057,9 @@ dng_rect dng_ifd::TileArea (uint32 rowIndex,
 			
 /*****************************************************************************/
 
+#if defined(__clang__)
+__attribute__((no_sanitize("unsigned-integer-overflow")))
+#endif
 uint32 dng_ifd::TileByteCount (const dng_rect &tile) const
 	{
 	

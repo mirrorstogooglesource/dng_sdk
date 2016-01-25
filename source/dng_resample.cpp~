@@ -557,7 +557,7 @@ dng_resample_task::dng_resample_task (const dng_image &srcImage,
 	if (fRowScale == 0 || fColScale == 0)
 		{
 		 ThrowBadFormat ();
-	}
+  	}
 	
 	if (srcImage.PixelSize  () <= 2 &&
 		dstImage.PixelSize  () <= 2 &&

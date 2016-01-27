@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "f4c1566d_1a691d3a",
+        "filename": "source/dng_types.h",
+        "patchSetId": 1
+      },
+      "lineNbr": 100,
+      "author": {
+        "id": 1091884
+      },
+      "writtenOn": "2016-01-27T13:09:44Z",
+      "side": 1,
+      "message": "Remove empty line.",
+      "revId": "aca1ca82d8fcd6c8f93cf5a01ead515e4855bf3a",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    }
+  ]
+}

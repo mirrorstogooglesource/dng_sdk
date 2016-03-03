@@ -213,9 +213,10 @@ static void ConvertUnsigned(TSrc src, TDest *dest) {
   *dest = converted;
 }
 
-// Returns the result of converting val to an int32_t using truncation if val is
-// in range of int32_t values. Otherwise, throws a dng_exception with error code
-// dng_error_unknown.
+// Returns the result of converting val to the result type using truncation if
+// val is in range of the result type values. Otherwise, throws a dng_exception
+// with error code dng_error_unknown.
 std::int32_t ConvertDoubleToInt32(double val);
+std::uint32_t ConvertDoubleToUint32(double val);
 
 #endif  // __dng_safe_arithmetic__

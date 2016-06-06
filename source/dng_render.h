@@ -76,7 +76,7 @@ class dng_function_exposure_tone: public dng_1d_function
 	
 	public:
 	
-		dng_function_exposure_tone (real64 exposure);
+		explicit dng_function_exposure_tone (real64 exposure);
 				
 		/// Returns output value for a given input tone.
 
@@ -118,7 +118,7 @@ class dng_function_gamma_encode: public dng_1d_function
 	
 	public:
 	
-		dng_function_gamma_encode (const dng_color_space &space);
+		explicit dng_function_gamma_encode (const dng_color_space &space);
 		
 		virtual real64 Evaluate (real64 x) const;
 		

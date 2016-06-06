@@ -273,7 +273,7 @@ class dng_metadata
 		
 	public:
 
-		dng_metadata (dng_host &host);
+		explicit dng_metadata (dng_host &host);
 		
 		dng_metadata (const dng_metadata &rhs,
 					  dng_memory_allocator &allocator);
@@ -2361,7 +2361,7 @@ class dng_negative
 
 	protected:
 	
-		dng_negative (dng_host &host);
+		explicit dng_negative (dng_host &host);
 		
 		virtual void Initialize ();
 		

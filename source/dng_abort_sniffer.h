@@ -56,7 +56,7 @@ class dng_set_minimum_priority
 	
 	public:
 	
-		dng_set_minimum_priority (dng_priority priority);
+		explicit dng_set_minimum_priority (dng_priority priority);
 		
 		~dng_set_minimum_priority ();
 	
@@ -174,7 +174,7 @@ class dng_sniffer_task
 		/// \param fract Percentage of total processing this task is expected
 		/// to take, from 0.0 to 1.0 . 
 
-		dng_sniffer_task (dng_abort_sniffer *sniffer,
+		explicit dng_sniffer_task (dng_abort_sniffer *sniffer,
 					      const char *name = NULL,
 					      real64 fract = 0.0)
 					 

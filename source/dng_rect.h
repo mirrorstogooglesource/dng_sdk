@@ -76,7 +76,7 @@ class dng_rect
 					}
 			}
 			
-		dng_rect (const dng_point &size)
+		dng_rect (const dng_point &size)  // NOLINT, implicit
 			:	t (0)
 			,	l (0)
 			,	b (size.v)
@@ -231,7 +231,7 @@ class dng_rect_real64
 			{
 			}
 			
-		dng_rect_real64 (const dng_point_real64 &size)
+		dng_rect_real64 (const dng_point_real64 &size)  // NOLINT, implicit
 			:	t (0)
 			,	l (0)
 			,	b (size.v)
@@ -248,7 +248,7 @@ class dng_rect_real64
 			{
 			}
 			
-		dng_rect_real64 (const dng_rect &rect)
+		dng_rect_real64 (const dng_rect &rect)  // NOLINT, implicit
 			:	t ((real64) rect.t)
 			,	l ((real64) rect.l)
 			,	b ((real64) rect.b)
@@ -258,7 +258,7 @@ class dng_rect_real64
 		
 		void Clear ()
 			{
-			*this = dng_point_real64 ();
+			*this = dng_rect_real64 (dng_point_real64 ());
 			}
 		
 		bool operator== (const dng_rect_real64 &rect) const;

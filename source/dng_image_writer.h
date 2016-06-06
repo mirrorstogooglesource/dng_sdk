@@ -213,7 +213,7 @@ class tag_uint8: public tag_data_ptr
 		
 	public:
 	
-		tag_uint8 (uint16 code,
+		explicit tag_uint8 (uint16 code,
 				   uint8 value = 0)
 			
 			:	tag_data_ptr (code, ttByte, 1, &fValue)
@@ -259,7 +259,7 @@ class tag_uint16: public tag_data_ptr
 		
 	public:
 	
-		tag_uint16 (uint16 code,
+		explicit tag_uint16 (uint16 code,
 					uint16 value = 0)
 			
 			:	tag_data_ptr (code, ttShort, 1, &fValue)
@@ -323,7 +323,7 @@ class tag_uint32: public tag_data_ptr
 		
 	public:
 	
-		tag_uint32 (uint16 code,
+		explicit tag_uint32 (uint16 code,
 				    uint32 value = 0)
 			
 			:	tag_data_ptr (code, ttLong, 1, &fValue)
@@ -388,7 +388,7 @@ class tag_urational_ptr: public tag_data_ptr
 	
 	public:
 	
-		tag_urational_ptr (uint16 code,
+		explicit tag_urational_ptr (uint16 code,
 				           const dng_urational *data = NULL,
 				           uint32 count = 1)
 			
@@ -429,7 +429,7 @@ class tag_srational_ptr: public tag_data_ptr
 	
 	public:
 	
-		tag_srational_ptr (uint16 code,
+		explicit tag_srational_ptr (uint16 code,
 				           const dng_srational *data = NULL,
 				           uint32 count = 1)
 			
@@ -451,7 +451,7 @@ class tag_real64: public tag_data_ptr
 		
 	public:
 	
-		tag_real64 (uint16 code,
+		explicit tag_real64 (uint16 code,
 				    real64 value = 0.0)
 			
 			:	tag_data_ptr (code, ttDouble, 1, &fValue)
@@ -591,7 +591,7 @@ class tag_xmp: public tag_uint8_ptr
 		
 	public:
 		
-		tag_xmp (const dng_xmp *xmp);
+		explicit tag_xmp (const dng_xmp *xmp);
 				 
 	private:
 	
@@ -1000,7 +1000,7 @@ class tiff_dng_extended_color_profile: private dng_tiff_directory
 
 	public:
 
-		tiff_dng_extended_color_profile (const dng_camera_profile &profile);
+		explicit tiff_dng_extended_color_profile (const dng_camera_profile &profile);
 
 		void Put (dng_stream &stream,
 				  bool includeModelRestriction = true);

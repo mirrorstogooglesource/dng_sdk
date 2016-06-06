@@ -82,7 +82,7 @@ class dng_stream
 		
 	protected:
 	
-		dng_stream (dng_abort_sniffer *sniffer = NULL,
+		explicit dng_stream (dng_abort_sniffer *sniffer = NULL,
 					uint32 bufferSize = kDefaultBufferSize,
 					uint64 offsetInOriginalFile = kDNGStreamInvalidOffset);
 		
@@ -599,7 +599,7 @@ class TempBigEndian
 		
 	public:
 	
-		TempBigEndian (dng_stream &stream,
+		explicit TempBigEndian (dng_stream &stream,
 					   bool bigEndian = true);
 						 
 		virtual ~TempBigEndian ();
@@ -613,7 +613,7 @@ class TempLittleEndian: public TempBigEndian
 	
 	public:
 	
-		TempLittleEndian (dng_stream &stream,
+		explicit TempLittleEndian (dng_stream &stream,
 						  bool littleEndian = true)
 			
 			:	TempBigEndian (stream, !littleEndian)
@@ -668,7 +668,7 @@ class PreserveStreamReadPosition
 	
 	public:
 	
-		PreserveStreamReadPosition (dng_stream &stream)
+		explicit PreserveStreamReadPosition (dng_stream &stream)
 
 			:	fStream	  (stream)
 			,	fPosition (stream.Position ())

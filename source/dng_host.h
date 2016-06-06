@@ -115,7 +115,7 @@ class dng_host
 		/// should be aborted and to communicate progress updates. Defaults to singleton
 		/// global dng_abort_sniffer, which never aborts and ignores progress updated.
 
-		dng_host (dng_memory_allocator *allocator = NULL,
+		explicit dng_host (dng_memory_allocator *allocator = NULL,
 				  dng_abort_sniffer *sniffer = NULL);
 		
 		/// Clean up direct memory for dng_host. Memory allocator and abort sniffer 

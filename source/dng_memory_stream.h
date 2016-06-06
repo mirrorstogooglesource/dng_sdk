@@ -53,7 +53,7 @@ class dng_memory_stream: public dng_stream
 		/// \param sniffer If non-NULL used to check for user cancellation.
 		/// \param pageSize Unit of allocation for data stored in stream.
 
-		dng_memory_stream (dng_memory_allocator &allocator,
+		explicit dng_memory_stream (dng_memory_allocator &allocator,
 						   dng_abort_sniffer *sniffer = NULL,
 						   uint32 pageSize = 64 * 1024);
 						   

@@ -73,7 +73,7 @@ void OptimizeOrder (void *&dPtr,
 
 #else
 
-#define ASSERT_PIXEL_TYPE(typeVal) DNG_ASSERT (fPixelType == typeVal, "Pixel type access mismatch")
+#define ASSERT_PIXEL_TYPE(typeVal) DNG_ASSERT (fPixelType == (typeVal), "Pixel type access mismatch")
 
 #endif
 

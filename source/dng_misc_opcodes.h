@@ -39,9 +39,9 @@ class dng_opcode_TrimBounds: public dng_opcode
 
 		/// Create opcode to trim image to the specified bounds.
 	
-		dng_opcode_TrimBounds (const dng_rect &bounds);
+		explicit dng_opcode_TrimBounds (const dng_rect &bounds);
 		
-		dng_opcode_TrimBounds (dng_stream &stream);
+		explicit dng_opcode_TrimBounds (dng_stream &stream);
 	
 		virtual void PutData (dng_stream &stream) const;
 
@@ -82,7 +82,7 @@ class dng_area_spec
 
 		/// Create an empty area.
 	
-		dng_area_spec (const dng_rect &area = dng_rect (),
+		explicit dng_area_spec (const dng_rect &area = dng_rect (),
 					   uint32 plane = 0,
 					   uint32 planes = 1,
 					   uint32 rowPitch = 1,
@@ -234,7 +234,7 @@ class dng_opcode_MapPolynomial: public dng_inplace_opcode
 								  uint32 degree,
 								  const real64 *coefficient);
 	
-		dng_opcode_MapPolynomial (dng_stream &stream);
+		explicit dng_opcode_MapPolynomial (dng_stream &stream);
 	
 		virtual void PutData (dng_stream &stream) const;
 

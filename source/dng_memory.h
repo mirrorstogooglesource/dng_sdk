@@ -54,7 +54,7 @@ class dng_memory_data
 		/// \param size Number of bytes of memory needed.
 		/// \exception dng_memory_full with fErrorCode equal to dng_error_memory.
 
-		dng_memory_data (uint32 size);
+		explicit dng_memory_data (uint32 size);
 		
 		/// Note: This constructor is for internal use only and should not be
 		/// considered part of the DNG SDK API.
@@ -294,7 +294,7 @@ class dng_memory_block
 		
 	protected:
 	
-		dng_memory_block (uint32 logicalSize)
+		explicit dng_memory_block (uint32 logicalSize)
 			:	fLogicalSize (logicalSize)
 			,	fBuffer (NULL)
 			{
@@ -552,7 +552,7 @@ class dng_std_allocator
 		// Default implementations of default constructor and copy constructor.
 		dng_std_allocator () = default;
 		dng_std_allocator (const dng_std_allocator&) = default;
-		template<typename U> dng_std_allocator (const dng_std_allocator<U>&) {}
+		template<typename U> explicit dng_std_allocator (const dng_std_allocator<U>&) {}
 		
 		T* allocate (size_t n)
 			{

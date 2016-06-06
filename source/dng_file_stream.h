@@ -42,7 +42,7 @@ class dng_file_stream: public dng_stream
 		/// \param output Set to true if writing, false otherwise.
 		/// \param bufferSize size of internal buffer to use. Defaults to 4k.
 
-		dng_file_stream (const char *filename,
+		explicit dng_file_stream (const char *filename,
 						 bool output = false,
 						 uint32 bufferSize = kDefaultBufferSize);
 		

@@ -55,7 +55,7 @@ class dng_exception
 		/// Construct an exception representing the given error code.
 		/// \param code Error code this exception is for.
 		
-		dng_exception (dng_error_code code)
+		explicit dng_exception (dng_error_code code)
 		
 			: fErrorCode (code)
 			

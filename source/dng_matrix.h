@@ -120,7 +120,7 @@ class dng_matrix_3by3: public dng_matrix
 	
 		dng_matrix_3by3 ();
 		
-		dng_matrix_3by3 (const dng_matrix &m);
+		dng_matrix_3by3 (const dng_matrix &m);  // NOLINT, implicit
 		
 		dng_matrix_3by3 (real64 a00, real64 a01, real64 a02,
 				         real64 a10, real64 a11, real64 a12,
@@ -141,7 +141,7 @@ class dng_matrix_4by3: public dng_matrix
 	
 		dng_matrix_4by3 ();
 		
-		dng_matrix_4by3 (const dng_matrix &m);
+		dng_matrix_4by3 (const dng_matrix &m);  // NOLINT, implicit
 		
 		dng_matrix_4by3 (real64 a00, real64 a01, real64 a02,
 				         real64 a10, real64 a11, real64 a12,
@@ -168,7 +168,7 @@ class dng_vector
 	
 		dng_vector ();
 		
-		dng_vector (uint32 count);
+		explicit dng_vector (uint32 count);
 		
 		dng_vector (const dng_vector &v);
 		
@@ -237,7 +237,7 @@ class dng_vector_3: public dng_vector
 	
 		dng_vector_3 ();
 		
-		dng_vector_3 (const dng_vector &v);
+		dng_vector_3 (const dng_vector &v);  // NOLINT, implicit
 		
 		dng_vector_3 (real64 a0,
 					  real64 a1,
@@ -256,7 +256,7 @@ class dng_vector_4: public dng_vector
 	
 		dng_vector_4 ();
 		
-		dng_vector_4 (const dng_vector &v);
+		dng_vector_4 (const dng_vector &v);  // NOLINT, implicit
 		
 		dng_vector_4 (real64 a0,
 					  real64 a1,

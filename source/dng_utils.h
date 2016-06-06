@@ -764,7 +764,7 @@ class dng_timer
 
 	public:
 
-		dng_timer (const char *message);
+		explicit dng_timer (const char *message);
 
 		~dng_timer ();
 		

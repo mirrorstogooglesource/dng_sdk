@@ -42,7 +42,7 @@ class dng_mutex
 			kDNGMutexLevelLeaf = 0x70000000u
 			};
 
-		dng_mutex (const char *mutexName,
+		explicit dng_mutex (const char *mutexName,
 				   uint32 mutexLevel = kDNGMutexLevelLeaf);
 
 		virtual ~dng_mutex ();
@@ -92,7 +92,7 @@ class dng_lock_mutex
 	
 	public:
 	
-		dng_lock_mutex (dng_mutex *mutex);
+		explicit dng_lock_mutex (dng_mutex *mutex);
 			
 		~dng_lock_mutex ();
 			
@@ -117,7 +117,7 @@ class dng_unlock_mutex
 	
 	public:
 	
-		dng_unlock_mutex (dng_mutex *mutex);
+		explicit dng_unlock_mutex (dng_mutex *mutex);
 			
 		~dng_unlock_mutex ();
 			

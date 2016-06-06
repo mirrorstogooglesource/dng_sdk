@@ -55,7 +55,7 @@ class dng_temperature
 			
 			}
 			
-		dng_temperature (const dng_xy_coord &xy)
+		explicit dng_temperature (const dng_xy_coord &xy)
 		
 			:	fTemperature (0.0)
 			,	fTint        (0.0)

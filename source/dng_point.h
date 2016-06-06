@@ -83,7 +83,7 @@ class dng_point_real64
 			{
 			}
 			
-		dng_point_real64 (const dng_point &pt)
+		explicit dng_point_real64 (const dng_point &pt)
 			:	v ((real64) pt.v)
 			,	h ((real64) pt.h)
 			{

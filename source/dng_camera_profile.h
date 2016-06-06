@@ -77,7 +77,7 @@ class dng_camera_profile_id
 		/// Construct a camera profile ID with the specified name and no fingerprint.
 		/// \param name The name of the camera profile ID.
 
-		dng_camera_profile_id (const char *name)
+		explicit dng_camera_profile_id (const char *name)
 			
 			:	fName		 ()
 			,	fFingerprint ()
@@ -89,7 +89,7 @@ class dng_camera_profile_id
 		/// Construct a camera profile ID with the specified name and no fingerprint.
 		/// \param name The name of the camera profile ID.
 
-		dng_camera_profile_id (const dng_string &name)
+		explicit dng_camera_profile_id (const dng_string &name)
 			
 			:	fName		 (name)
 			,	fFingerprint ()

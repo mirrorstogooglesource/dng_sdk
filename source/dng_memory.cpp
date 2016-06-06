@@ -147,7 +147,7 @@ class dng_malloc_block : public dng_memory_block
 	
 	public:
 	
-		dng_malloc_block (uint32 logicalSize);
+		explicit dng_malloc_block (uint32 logicalSize);
 		
 		virtual ~dng_malloc_block ();
 		

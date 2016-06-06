@@ -52,7 +52,7 @@ class dng_opcode_FixBadPixelsConstant: public dng_filter_opcode
 		dng_opcode_FixBadPixelsConstant (uint32 constant,
 										 uint32 bayerPhase);
 
-		dng_opcode_FixBadPixelsConstant (dng_stream &stream);
+		explicit dng_opcode_FixBadPixelsConstant (dng_stream &stream);
 	
 		virtual void PutData (dng_stream &stream) const;
 
@@ -256,7 +256,7 @@ class dng_opcode_FixBadPixelsList: public dng_filter_opcode
 		dng_opcode_FixBadPixelsList (AutoPtr<dng_bad_pixel_list> &list,
 									 uint32 bayerPhase);
 		
-		dng_opcode_FixBadPixelsList (dng_stream &stream);
+		explicit dng_opcode_FixBadPixelsList (dng_stream &stream);
 	
 		virtual void PutData (dng_stream &stream) const;
 

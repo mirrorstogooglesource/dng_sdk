@@ -142,7 +142,7 @@ class dng_1d_inverse: public dng_1d_function
 	
 	public:
 	
-		dng_1d_inverse (const dng_1d_function &f);
+		explicit dng_1d_inverse (const dng_1d_function &f);
 	
 		virtual bool IsIdentity () const;
 	

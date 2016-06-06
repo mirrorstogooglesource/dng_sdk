@@ -45,7 +45,7 @@ class dng_ref_counted_block
 				
 			uint32 fSize;
 
-			header (uint32 size)
+			explicit header (uint32 size)
 				: fMutex ("dng_ref_counted_block")
 				, fRefCount (1)
 				, fSize (size)
@@ -72,7 +72,7 @@ class dng_ref_counted_block
 		/// \param size Number of bytes of memory needed.
 		/// \exception dng_memory_full with fErrorCode equal to dng_error_memory.
 
-		dng_ref_counted_block (uint32 size);
+		explicit dng_ref_counted_block (uint32 size);
 		
 		/// Release memory buffer using free.
 

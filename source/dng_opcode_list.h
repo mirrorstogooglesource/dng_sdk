@@ -48,7 +48,7 @@ class dng_opcode_list
 
 		/// Create an empty opcode list for the specific image stage (1, 2, or 3).
 	
-		dng_opcode_list (uint32 stage);
+		explicit dng_opcode_list (uint32 stage);
 		
 		~dng_opcode_list ();
 

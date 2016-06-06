@@ -85,10 +85,10 @@ typedef double real64;
 
 /// \def Build a Macintosh style four-character constant in a compiler safe way.
 
-#define DNG_CHAR4(a,b,c,d)	((((uint32) a) << 24) |\
-							 (((uint32) b) << 16) |\
-							 (((uint32) c) <<  8) |\
-							 (((uint32) d)      ))
+#define DNG_CHAR4(a,b,c,d)	((((uint32) (a)) << 24) |\
+							 (((uint32) (b)) << 16) |\
+							 (((uint32) (c)) <<  8) |\
+							 (((uint32) (d))      ))
 
 /*****************************************************************************/
 

@@ -1750,12 +1750,12 @@ void RefBaselineRGBTone (const real32 *sPtrR,
 		#define RGBTone(r, g, b, rr, gg, bb)\
 			{\
 			\
-			DNG_ASSERT (r >= g && g >= b && r > b, "Logic Error RGBTone");\
+			DNG_ASSERT ((r) >= (g) && (g) >= (b) && (r) > (b), "Logic Error RGBTone");\
 			\
-			rr = table.Interpolate (r);\
-			bb = table.Interpolate (b);\
+			(rr) = table.Interpolate (r);\
+			(bb) = table.Interpolate (b);\
 			\
-			gg = bb + ((rr - bb) * (g - b) / (r - b));\
+			(gg) = (bb) + (((rr) - (bb)) * ((g) - (b)) / ((r) - (b)));\
 			\
 			}
 		

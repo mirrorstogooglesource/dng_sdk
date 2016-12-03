@@ -1,0 +1,8 @@
+Code-Review+2: Dan Willemsen <dwillemsen@google.com>
+Verified+1: Colin Cross <ccross@android.com>
+Presubmit-Verified+1: Treehugger Robot <treehugger-gerrit@google.com>
+Submitted-by: Colin Cross <ccross@android.com>
+Submitted-at: Sat, 03 Dec 2016 07:13:02 +0000
+Reviewed-on: https://android-review.googlesource.com/309210
+Project: platform/external/dng_sdk
+Branch: refs/heads/master

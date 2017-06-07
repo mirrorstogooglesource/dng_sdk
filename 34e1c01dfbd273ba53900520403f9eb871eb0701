@@ -22,6 +22,30 @@
       "revId": "34e1c01dfbd273ba53900520403f9eb871eb0701",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1c261021_43efc797",
+        "filename": "OWNERS",
+        "patchSetId": 2
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 1052399
+      },
+      "writtenOn": "2017-06-07T16:41:47Z",
+      "side": 1,
+      "message": "Replaced with adaubert@, but commented out zalman@.\nOWNERS files should contain email addresses registered in Gerrit.\nCould you ask zalman@ to sign in Gerrit or suggest someone else?\nThanks.",
+      "parentUuid": "2c0a00a4_69a59070",
+      "range": {
+        "startLine": 1,
+        "startChar": 0,
+        "endLine": 3,
+        "endChar": 19
+      },
+      "revId": "34e1c01dfbd273ba53900520403f9eb871eb0701",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
     }
   ]
 }

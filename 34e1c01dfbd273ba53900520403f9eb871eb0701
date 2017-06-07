@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "2c0a00a4_69a59070",
+        "filename": "OWNERS",
+        "patchSetId": 2
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 1088839
+      },
+      "writtenOn": "2017-06-07T06:54:39Z",
+      "side": 1,
+      "message": "Please change to:\nadaubert@google.com\nzalman@google.com",
+      "range": {
+        "startLine": 1,
+        "startChar": 0,
+        "endLine": 3,
+        "endChar": 19
+      },
+      "revId": "34e1c01dfbd273ba53900520403f9eb871eb0701",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    }
+  ]
+}

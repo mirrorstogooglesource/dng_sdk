@@ -90,7 +90,6 @@ cc_defaults {
     rtti: true,
     cppflags: ["-fexceptions"],
 
-    clang: true,
     sanitize: {
         misc_undefined: [
             "unsigned-integer-overflow",

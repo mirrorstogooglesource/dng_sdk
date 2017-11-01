@@ -75,6 +75,7 @@ cc_defaults {
         "-DqDNGUseXMP=0",
         "-DqDNGValidateTarget=1",
         "-DqAndroid=1",
+        "-Werror",
         "-Wsign-compare",
         "-Wno-reorder",
         "-Wframe-larger-than=20000",

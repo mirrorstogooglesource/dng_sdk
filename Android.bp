@@ -149,3 +149,22 @@ cc_binary {
         "libjpeg",
     ],
 }
+
+cc_binary_host {
+    name: "dng_validate_host",
+    defaults: ["libdng_sdk-defaults"],
+    srcs: ["source/dng_validate.cpp"],
+
+    cflags: ["-DqDNGValidate=1"],
+
+    shared_libs: [
+        "libz",
+        "libjpeg",
+    ],
+
+    target: {
+        darwin: {
+            enabled: false, // b/67474260
+        },
+    },
+}

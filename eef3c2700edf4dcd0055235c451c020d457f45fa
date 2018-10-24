@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "47c3faf3_e3510e60",
+        "filename": "Android.bp",
+        "patchSetId": 1
+      },
+      "lineNbr": 117,
+      "author": {
+        "id": 1012974
+      },
+      "writtenOn": "2018-10-24T17:42:32Z",
+      "side": 1,
+      "message": "Why is this needed?",
+      "range": {
+        "startLine": 117,
+        "startChar": 27,
+        "endLine": 117,
+        "endChar": 48
+      },
+      "revId": "eef3c2700edf4dcd0055235c451c020d457f45fa",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
+    }
+  ]
+}

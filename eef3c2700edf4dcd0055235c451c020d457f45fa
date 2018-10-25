@@ -22,6 +22,30 @@
       "revId": "eef3c2700edf4dcd0055235c451c020d457f45fa",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "c0e5d676_9ab877a5",
+        "filename": "Android.bp",
+        "patchSetId": 1
+      },
+      "lineNbr": 117,
+      "author": {
+        "id": 1064724
+      },
+      "writtenOn": "2018-10-25T12:28:58Z",
+      "side": 1,
+      "message": "Contrary to the device build environment, the host build environment does not by default include compiler-rt for linking when building with clang. This adds some functions that are not otherwise available in libgcc and that are needed by dng_safe_arithmetic.h",
+      "parentUuid": "47c3faf3_e3510e60",
+      "range": {
+        "startLine": 117,
+        "startChar": 27,
+        "endLine": 117,
+        "endChar": 48
+      },
+      "revId": "eef3c2700edf4dcd0055235c451c020d457f45fa",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
     }
   ]
 }

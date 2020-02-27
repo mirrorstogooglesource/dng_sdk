@@ -1,0 +1,12 @@
+Lint+1: Lint 🤖 <android-build-prod-ayeaye@system.gserviceaccount.com>
+Lint+2: Anton Daubert <adaubert@google.com>
+Code-Review+1: Leon Scroggins <scroggo@google.com>
+Code-Review+1: Zalman Stern <zalman@google.com>
+Code-Review+2: Anton Daubert <adaubert@google.com>
+Autosubmit+1: Zalman Stern <zalman@google.com>
+Presubmit-Verified+1: Treehugger Robot <treehugger-gerrit@google.com>
+Submitted-by: Treehugger Robot <treehugger-gerrit@google.com>
+Submitted-at: Thu, 27 Feb 2020 06:42:37 +0000
+Reviewed-on: https://android-review.googlesource.com/c/platform/external/dng_sdk/+/1236988
+Project: platform/external/dng_sdk
+Branch: refs/heads/master

@@ -1,0 +1,11 @@
+Autosubmit+1: Bob Badour <bbadour@google.com>
+Autosubmit+1: Zalman Stern <zalman@google.com>
+Lint+1: Lint 🤖 <android-build-prod-ayeaye@system.gserviceaccount.com>
+Code-Review+1: Zalman Stern <zalman@google.com>
+Code-Review+2: Jaewoong Jung <jungjw@google.com>
+Presubmit-Verified+1: Treehugger Robot <treehugger-gerrit@google.com>
+Submitted-by: Treehugger Robot <treehugger-gerrit@google.com>
+Submitted-at: Tue, 05 May 2020 16:42:54 +0000
+Reviewed-on: https://android-review.googlesource.com/c/platform/external/dng_sdk/+/1298420
+Project: platform/external/dng_sdk
+Branch: refs/heads/master

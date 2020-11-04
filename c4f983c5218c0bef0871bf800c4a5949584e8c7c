@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "6fe106e2_03ce7aec",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1780667
+      },
+      "writtenOn": "2020-11-04T23:53:00Z",
+      "side": 1,
+      "message": "This is a fuzz target ",
+      "revId": "c4f983c5218c0bef0871bf800c4a5949584e8c7c",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    }
+  ]
+}

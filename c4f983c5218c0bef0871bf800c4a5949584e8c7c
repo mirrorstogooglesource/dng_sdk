@@ -64,6 +64,30 @@
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "d91bb8ca_267175f9",
+        "filename": "fuzzer/dng_parser_fuzzer.cpp",
+        "patchSetId": 1
+      },
+      "lineNbr": 30,
+      "author": {
+        "id": 1780667
+      },
+      "writtenOn": "2020-11-05T18:15:56Z",
+      "side": 1,
+      "message": "DNG SDK uses C++ exceptions for reporting regular errors during execution (i.e. instead of returning an error code as a return value it throws an exception). DNG exceptions are inherited from the base `dng_exception` type. This catch statement catches only them. Other types of exceptions (such as ASAN errors, `std::length_error`, `std::bad_alloc` and etc) won\u0027t be caught here and will reach libFuzzer.",
+      "parentUuid": "8bcce479_d71d88af",
+      "range": {
+        "startLine": 30,
+        "startChar": 4,
+        "endLine": 30,
+        "endChar": 30
+      },
+      "revId": "c4f983c5218c0bef0871bf800c4a5949584e8c7c",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "2a7bb5f2_20b2935b",
@@ -77,6 +101,24 @@
       "writtenOn": "2020-11-05T07:39:40Z",
       "side": 1,
       "message": "May you like to handle this error case somehow (e.g. return not 0)? Or are you intentionally ignoring whether this is success or failure?",
+      "revId": "c4f983c5218c0bef0871bf800c4a5949584e8c7c",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "5f950563_59dc1c8c",
+        "filename": "fuzzer/dng_parser_fuzzer.cpp",
+        "patchSetId": 1
+      },
+      "lineNbr": 31,
+      "author": {
+        "id": 1780667
+      },
+      "writtenOn": "2020-11-05T18:15:56Z",
+      "side": 1,
+      "message": "Thanks for noting this. Yes, I\u0027m intentionally ignoring them: according to libFuzzer doc (https://llvm.org/docs/LibFuzzer.html#fuzz-target) currently it doesn\u0027t support any non-zero return value from `LLVMFuzzerTestOneInput` routine. Thus, I omit return 0 statement in the catch block. From the standpoint of fuzzing the return value doesn\u0027t really matter (what\u0027s important is if there are any non-handled exceptions thrown during the code execution or out-of-bounds memory access).",
+      "parentUuid": "2a7bb5f2_20b2935b",
       "revId": "c4f983c5218c0bef0871bf800c4a5949584e8c7c",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     }

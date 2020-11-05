@@ -16,6 +16,23 @@
       "message": "This is a fuzz target ",
       "revId": "c4f983c5218c0bef0871bf800c4a5949584e8c7c",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "2a7bb5f2_20b2935b",
+        "filename": "fuzzer/dng_parser_fuzzer.cpp",
+        "patchSetId": 1
+      },
+      "lineNbr": 31,
+      "author": {
+        "id": 1091884
+      },
+      "writtenOn": "2020-11-05T07:39:40Z",
+      "side": 1,
+      "message": "May you like to handle this error case somehow (e.g. return not 0)? Or are you intentionally ignoring whether this is success or failure?",
+      "revId": "c4f983c5218c0bef0871bf800c4a5949584e8c7c",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     }
   ]
 }

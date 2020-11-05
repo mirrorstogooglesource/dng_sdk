@@ -20,6 +20,52 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "a9add47f_19186421",
+        "filename": "fuzzer/Android.bp",
+        "patchSetId": 1
+      },
+      "lineNbr": 15,
+      "author": {
+        "id": 1353865
+      },
+      "writtenOn": "2020-11-05T15:07:11Z",
+      "side": 1,
+      "message": "Consider running bpfmt here:\n$ make bpfmt\nNavigate to your fuzzer directory\n$ bpfmt -s -w ./Android.bp",
+      "range": {
+        "startLine": 9,
+        "startChar": 0,
+        "endLine": 15,
+        "endChar": 18
+      },
+      "revId": "c4f983c5218c0bef0871bf800c4a5949584e8c7c",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "8bcce479_d71d88af",
+        "filename": "fuzzer/dng_parser_fuzzer.cpp",
+        "patchSetId": 1
+      },
+      "lineNbr": 30,
+      "author": {
+        "id": 1353865
+      },
+      "writtenOn": "2020-11-05T15:07:11Z",
+      "side": 1,
+      "message": "I dont fully understand the catch block use here. It is normal for a crash to happen while running the fuzzer, and when it happens, it is caught by the engine and the stacktrace reported.",
+      "range": {
+        "startLine": 30,
+        "startChar": 4,
+        "endLine": 30,
+        "endChar": 30
+      },
+      "revId": "c4f983c5218c0bef0871bf800c4a5949584e8c7c",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "2a7bb5f2_20b2935b",
         "filename": "fuzzer/dng_parser_fuzzer.cpp",
         "patchSetId": 1

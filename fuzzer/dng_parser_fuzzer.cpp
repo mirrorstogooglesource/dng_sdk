@@ -7,7 +7,6 @@
 #include "dng_memory_stream.h"
 #include "dng_negative.h"
 
-
 extern "C" int LLVMFuzzerTestOneInput(const uint8_t *data, size_t size) {
   dng_host host;
   dng_memory_stream stream(host.Allocator());
@@ -22,14 +21,18 @@ extern "C" int LLVMFuzzerTestOneInput(const uint8_t *data, size_t size) {
     info.Parse(host, stream);
     info.PostParse(host);
 
-    if (info.IsValidDNG()) {
-      negative->Parse(host, stream, info);
-      negative->PostParse(host, stream, info);
-      negative->ReadStage1Image(host, stream, info);
-    }
+#ifndef SKIP_DNG_VALIDATION_FUZZER
+    if (!info.IsValidDNG()) return 0;
+#endif
+    negative->Parse(host, stream, info);
+    negative->PostParse(host, stream, info);
+    negative->ReadStage1Image(host, stream, info);
   } catch (dng_exception &e) {
     // dng_sdk throws C++ exceptions on errors
     // catch them here to prevent libFuzzer from crashing.
+    // return 0 value as libFuzzer currently doesn't support non-zero return
+    // values.
+    return 0;
   }
 
   return 0;

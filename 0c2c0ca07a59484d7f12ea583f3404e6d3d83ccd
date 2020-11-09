@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "f0e76f42_b346432d",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1183663
+      },
+      "writtenOn": "2020-11-09T20:09:59Z",
+      "side": 1,
+      "message": "Hopefully I\u0027m pushing the right buttons here.\n\nI recently put a fix into google3 for an issues with DGN linearization info. This has been reported to Adobe. There are a few other things I\u0027m looking at and then I\u0027ll see about getting changes into the Android source tree. More fuzzing is always good.",
+      "revId": "0c2c0ca07a59484d7f12ea583f3404e6d3d83ccd",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    }
+  ]
+}

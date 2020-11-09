@@ -24,3 +24,33 @@ cc_fuzz {
         "seeds/CVE_2020_9589/poc.dng",
     ],
 }
+
+cc_fuzz {
+    name: "dng_parser_no_validation_fuzzer",
+    host_supported: true,
+    srcs: [
+        "dng_parser_fuzzer.cpp",
+    ],
+    cflags: [
+        "-DSKIP_DNG_VALIDATION_FUZZER",
+        "-Wno-unused-parameter",
+        "-fexceptions",
+    ],
+    static_libs: [
+        "libdng_sdk",
+        "libjpeg",
+        "liblog",
+        "libz",
+    ],
+    target: {
+        darwin: {
+            enabled: false,
+        },
+    },
+    corpus: [
+        "seeds/1",
+        "seeds/2",
+        "seeds/CVE_2020_9589/original.dng",
+        "seeds/CVE_2020_9589/poc.dng",
+    ],
+}

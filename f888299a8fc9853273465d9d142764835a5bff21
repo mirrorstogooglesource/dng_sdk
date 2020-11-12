@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "d4ab4c67_a30e48de",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1780667
+      },
+      "writtenOn": "2020-11-12T20:56:12Z",
+      "side": 1,
+      "message": "Adding another fuzz target for DNG SDK with DNG image validation disabled. After offline conversation with Zalman there might be some users of DNG SDK that may call DNG parsing functionality with missing IsValidDNG call. The seed file seeds/2 reproduces b/146718539.",
+      "revId": "f888299a8fc9853273465d9d142764835a5bff21",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    }
+  ]
+}

@@ -16,6 +16,29 @@
       "message": "Adding another fuzz target for DNG SDK with DNG image validation disabled. After offline conversation with Zalman there might be some users of DNG SDK that may call DNG parsing functionality with missing IsValidDNG call. The seed file seeds/2 reproduces b/146718539.",
       "revId": "f888299a8fc9853273465d9d142764835a5bff21",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "ac22b668_9c0f8903",
+        "filename": "fuzzer/Android.bp",
+        "patchSetId": 2
+      },
+      "lineNbr": 37,
+      "author": {
+        "id": 1353865
+      },
+      "writtenOn": "2020-11-14T00:31:03Z",
+      "side": 1,
+      "message": "nit: apply bpfmt to detect these format issue.",
+      "range": {
+        "startLine": 37,
+        "startChar": 0,
+        "endLine": 37,
+        "endChar": 1
+      },
+      "revId": "f888299a8fc9853273465d9d142764835a5bff21",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     }
   ]
 }

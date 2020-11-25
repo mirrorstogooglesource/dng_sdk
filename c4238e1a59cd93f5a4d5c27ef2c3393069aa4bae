@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "e409b3af_3eff4ab3",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1183663
+      },
+      "writtenOn": "2020-11-25T22:48:27Z",
+      "side": 1,
+      "message": "The answer I got back from Adobe is they expect IsValidDNG to be called after PostParse. The gcam code should be doing this now... They accepted a couple fixes for hardening purposes, but my guess is we\u0027ll see a lot of fuzzer crashes that can\u0027t really occur in practice if the fuzzer runs without the validation.",
+      "revId": "c4238e1a59cd93f5a4d5c27ef2c3393069aa4bae",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    }
+  ]
+}

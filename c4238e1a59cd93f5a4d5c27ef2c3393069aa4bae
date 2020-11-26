@@ -16,6 +16,24 @@
       "message": "The answer I got back from Adobe is they expect IsValidDNG to be called after PostParse. The gcam code should be doing this now... They accepted a couple fixes for hardening purposes, but my guess is we\u0027ll see a lot of fuzzer crashes that can\u0027t really occur in practice if the fuzzer runs without the validation.",
       "revId": "c4238e1a59cd93f5a4d5c27ef2c3393069aa4bae",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "1e5aa4b3_7f61e2ac",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1780667
+      },
+      "writtenOn": "2020-11-26T00:33:59Z",
+      "side": 1,
+      "message": "Thanks for the information! Based on this it looks like there is no value in this CL. Usage of DNG SDK in Android (external/skia/src/codec/SkRawCodec.cpp) calls IsValidDNG before ReadStage1Image, so it\u0027s OK.",
+      "parentUuid": "e409b3af_3eff4ab3",
+      "revId": "c4238e1a59cd93f5a4d5c27ef2c3393069aa4bae",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     }
   ]
 }

@@ -33,6 +33,23 @@
       "message": "Voting -1 on Open-Source-Licensing until Dash approves.",
       "revId": "2b0d1f7e22a9d8165877f1df4c2390c17dce5d7c",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "2a0a5cdd_2868c0f8",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1359095
+      },
+      "writtenOn": "2021-01-24T21:21:00Z",
+      "side": 1,
+      "message": "Dash,\n\nWhat do you make of\n  https://android.googlesource.com/platform/external/dng_sdk/+/master/LICENSE.source_code\n  https://android.googlesource.com/platform/external/dng_sdk/+/master/LICENSE\n?\n\nIf they are NOTICE I can change the override to legacy_notice and abandon this change.\n",
+      "revId": "2b0d1f7e22a9d8165877f1df4c2390c17dce5d7c",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     }
   ]
 }

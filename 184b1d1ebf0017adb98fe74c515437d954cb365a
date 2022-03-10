@@ -16,6 +16,24 @@
       "message": "LGTM",
       "revId": "184b1d1ebf0017adb98fe74c515437d954cb365a",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "eab6046c_5537f942",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1650040
+      },
+      "writtenOn": "2022-03-10T02:45:44Z",
+      "side": 1,
+      "message": "Can you please give +2 or assign to someone else for +2?",
+      "parentUuid": "8e15bca5_1a93c0ee",
+      "revId": "184b1d1ebf0017adb98fe74c515437d954cb365a",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     }
   ]
 }

@@ -156,7 +156,7 @@ cc_library{
     ],
 
     target: {
-        linux_glibc: {
+        host_linux: {
             static_libs: ["libcompiler_rt-extras"],
         },
         darwin: {

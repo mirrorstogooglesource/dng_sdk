@@ -68,6 +68,24 @@
       "message": "I have no idea who can get this to +2. Is there something I can do to get +2 ability myself for the DNG SDK stuff?",
       "revId": "184b1d1ebf0017adb98fe74c515437d954cb365a",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "d2b7ccc7_d86e05aa",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1650040
+      },
+      "writtenOn": "2022-04-12T18:28:17Z",
+      "side": 1,
+      "message": "Added adaubert@google.com who may be able to give +2",
+      "parentUuid": "2861f83b_ff312a07",
+      "revId": "184b1d1ebf0017adb98fe74c515437d954cb365a",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     }
   ]
 }

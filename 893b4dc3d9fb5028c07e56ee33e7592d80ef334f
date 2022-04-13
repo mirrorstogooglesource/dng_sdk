@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "5389569d_50e243de",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1780667
+      },
+      "writtenOn": "2022-04-13T05:29:15Z",
+      "side": 1,
+      "message": "Don\u0027t have privs for +2.",
+      "revId": "893b4dc3d9fb5028c07e56ee33e7592d80ef334f",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    }
+  ]
+}

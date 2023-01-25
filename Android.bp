@@ -163,6 +163,9 @@ cc_library{
             host_ldlibs: [
                 "-framework AppKit",
             ],
+	    cflags: [
+                "-Wno-deprecated-declarations",
+            ],
         },
         windows: {
             enabled: true,

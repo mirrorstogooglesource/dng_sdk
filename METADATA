@@ -1,7 +1,20 @@
-# *** THIS PACKAGE HAS SPECIAL LICENSING CONDITIONS.  PLEASE
-#     CONSULT THE OWNERS AND opensource-licensing@google.com BEFORE
-#     DEPENDING ON IT IN YOUR PROJECT. ***
+# THIS PACKAGE HAS SPECIAL LICENSING CONDITIONS. PLEASE
+# CONSULT THE OWNERS AND opensource-licensing@google.com BEFORE
+# DEPENDING ON IT IN YOUR PROJECT.
+
+name: "dng_sdk"
+description: "The DNG SDK provides support for reading and writing DNG files as well as for converting DNG data to a format that is easily displayed or processed by imaging applications."
 third_party {
-  license_note: "Adobe's DNG SDK License Agreement"
+  url {
+    type: ARCHIVE
+    value: "http://download.adobe.com/pub/adobe/dng/dng_sdk_1_4.zip"
+  }
+  version: "1.4"
   license_type: BY_EXCEPTION_ONLY
+  license_note: "Adobe's DNG SDK License Agreement"
+  last_upgrade_date {
+    year: 2015
+    month: 12
+    day: 3
+  }
 }

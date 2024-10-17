@@ -20,6 +20,7 @@ cc_fuzz {
     cflags: [
         "-Wno-unused-parameter",
         "-fexceptions",
+        "-Wno-expansion-to-defined",
     ],
     static_libs: [
         "libdng_sdk",

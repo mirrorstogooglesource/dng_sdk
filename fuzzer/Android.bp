@@ -37,6 +37,6 @@ cc_fuzz {
         "seeds/CVE_2020_9589/poc.dng",
     ],
     fuzz_config: {
-       cc: ["android-security-assurance-redteam@google.com"],
+        cc: ["android-security-assurance-redteam@google.com"],
     },
 }

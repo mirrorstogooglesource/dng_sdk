@@ -22,6 +22,30 @@
       },
       "revId": "83185c06e63a6bb5cb071f8a8aea324e5c762a5b",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "19607308_cb2cd80c",
+        "filename": "fuzzer/Android.bp",
+        "patchSetId": 2
+      },
+      "lineNbr": 18,
+      "author": {
+        "id": 1137906
+      },
+      "writtenOn": "2024-11-13T20:21:31Z",
+      "side": 1,
+      "message": "sorry, missed that one when migrating the CL. Fixed in latest iteration.",
+      "parentUuid": "4a4ea0f6_347cd455",
+      "range": {
+        "startLine": 18,
+        "startChar": 9,
+        "endLine": 18,
+        "endChar": 30
+      },
+      "revId": "83185c06e63a6bb5cb071f8a8aea324e5c762a5b",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     }
   ]
 }

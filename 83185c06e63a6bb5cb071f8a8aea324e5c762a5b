@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "4a4ea0f6_347cd455",
+        "filename": "fuzzer/Android.bp",
+        "patchSetId": 2
+      },
+      "lineNbr": 18,
+      "author": {
+        "id": 1780667
+      },
+      "writtenOn": "2024-11-13T18:24:26Z",
+      "side": 1,
+      "message": "Missing build rule for dng_jpeg_fuzzer.cpp in this CL.",
+      "range": {
+        "startLine": 18,
+        "startChar": 9,
+        "endLine": 18,
+        "endChar": 30
+      },
+      "revId": "83185c06e63a6bb5cb071f8a8aea324e5c762a5b",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    }
+  ]
+}
